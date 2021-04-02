@@ -5,7 +5,10 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -21,11 +24,21 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <!-- Remove this if you don't want to use Google signin. -->
+    <script
+      src="https://apis.google.com/js/platform.js?onload=googleInit"
+      async
+      defer
+    ></script>
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" class="h-full flex flex-col"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +49,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- <script>
+      /**
+       * googleInit
+       */
+
+       window.onLoadCallback = function(){
+  gapi.auth2.init({
+      client_id: 'filler_text_for_client_id.apps.googleusercontent.com'
+    });
+}
+      function googleInit() {
+        gapi.load('auth2', function () {
+          /* Ready. Make a call to gapi.auth2.init or some other API */
+          gapi.auth2.init({
+            client_id:
+              '736940532233-j9rku8qqqokfrkhshfcfr2n8ao3nf5c1.apps.googleusercontent.com',
+          });
+        });
+      }
+    </script> -->
   </body>
 </html>
