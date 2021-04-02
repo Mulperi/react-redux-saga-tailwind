@@ -12,7 +12,7 @@ const Header: React.FC<any> = () => {
     <AppBar position="static">
       <Toolbar className="flex flex-row justify-between">
         <IconButton edge="start" color="inherit" aria-label="menu">
-          Menu
+          React App
           {/* <MenuIcon /> */}
         </IconButton>
         <div>

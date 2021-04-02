@@ -20,6 +20,11 @@ const Navigation: React.FC<any> = () => {
             Profile
           </NavLink>
         </li>
+        <li className="p-4">
+          <NavLink activeClassName="text-purple-700 font-bold" to={'/grid'}>
+            Grid
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

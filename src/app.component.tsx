@@ -15,6 +15,7 @@ import { Button } from '@material-ui/core';
 import 'react-toastify/dist/ReactToastify.css';
 import { uiSnackbarOpen } from './store/reducers/ui.reducer';
 import { toast } from 'react-toastify';
+import GridContainer from './features/grid';
 /**
  * App component
  * @return {App} component.
@@ -50,6 +51,7 @@ const App: React.FunctionComponent = () => {
       <main className="flex-grow p-4">
         <Switch>
           <Route path="/home" component={HomeContainer} />
+          <Route path="/grid" component={GridContainer} />
           <Route path="/login" component={LoginContainer} />
           {loggedIn ? (
             <Route path="/todos" component={TodosContainer} />
